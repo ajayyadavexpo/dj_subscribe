@@ -8,8 +8,8 @@ def subscribe(request):
     sub = forms.Subscribe()
     if request.method == 'POST':
         sub = forms.Subscribe(request.POST)
-        subject = 'Welcome to DataFlair'
-        message = 'Hope you are enjoying your Django Tutorials'
+        subject = 'Welcome to Dj-Subscribe'
+        message = 'Hope you are enjoying your day !!! Happy coding'
         recepient = str(sub['Email'].value())
         send_mail(subject, 
             message, EMAIL_HOST_USER, [recepient], fail_silently = False)

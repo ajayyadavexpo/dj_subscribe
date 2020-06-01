@@ -2,9 +2,22 @@
 <html>
 <head>
     <title>Success</title>
+    <!-- Material Design for Bootstrap fonts and icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+
+    <!-- Material Design for Bootstrap CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
 </head>
 <body>
-    <h1>email sent successfully to: {{ recepient 
-    }}</h1>
+    <h1></h1>
+    <div class="row justify-content-center">
+        <div class="col-sm-5">
+            <div class="alert alert-success" role="alert">
+              <h4 class="alert-heading">Well done!</h4>
+              <p>Email sent successfully to: {{ recepient }}</p>
+              <hr>
+            </div>            
+        </div>
+    </div>
 </body>
 </html>
