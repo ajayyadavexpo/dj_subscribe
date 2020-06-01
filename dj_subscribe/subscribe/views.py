@@ -11,7 +11,6 @@ def subscribe(request):
         subject = 'Welcome to Dj-Subscribe'
         message = 'Hope you are enjoying your day !!! Happy coding'
         recepient = str(sub['Email'].value())
-        send_mail(subject, 
-            message, EMAIL_HOST_USER, [recepient], fail_silently = False)
+        send_mail(subject,message, EMAIL_HOST_USER, [recepient], fail_silently = False)
         return render(request, 'subscribe/success.html', {'recepient': recepient})
     return render(request, 'subscribe/index.html', {'form':sub})
